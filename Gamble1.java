@@ -63,7 +63,14 @@
                       total_loss_Money =total_loss_Money + Loss_Money;
 
                       System.out.println("Total Won Money in "+i+"day is="+total_Won_Money);
-                      System.out.println("Total loss Money in "+i+"day is"+total_loss_Money);
+                      System.out.println("Total loss Money in "+i+"day is"+total_loss_Money)
+
       }
+
+                      //Luckiest and UnLuckiest In a Month
+                      System.out.println("LukiestDay"+total_Won_Money);
+                      System.out.println("UnLuckiest"+total_loss_Money);
+
   }
 
+}
