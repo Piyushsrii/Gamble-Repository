@@ -5,7 +5,6 @@
     static int stakeMoney=100;
     static int betMoney=1;
 
-
     static int wonMoney=0;
     static int lossMoney=0;
     static int total_Won_Money=0;
@@ -26,11 +25,19 @@
        int p=(stakeMoney*percentage)/100;
        int i;
 
-       while(stakeMoney>=p)
+        while(stakeMoney>=p)
            {
 
 
               int pot = (int)Math.round(Math.random()*1+1);
+
+              for(i=1;i<=Num_of_Days;i++)
+                 {
+                 while(stakeMoney>=p)
+                 {
+
+                     int pot = (int)Math.round(Math.random()*1+1);
+
 
                      if(pot == 1)
                        {
@@ -51,3 +58,12 @@
                        Loss_Money += lossMoney;
 
                        }
+                       }
+                      total_Won_Money = total_Won_Money + Won_Money;
+                      total_loss_Money =total_loss_Money + Loss_Money;
+
+                      System.out.println("Total Won Money in "+i+"day is="+total_Won_Money);
+                      System.out.println("Total loss Money in "+i+"day is"+total_loss_Money);
+      }
+  }
+
