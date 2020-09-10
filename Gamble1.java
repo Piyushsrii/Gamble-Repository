@@ -71,6 +71,17 @@
                       System.out.println("LukiestDay"+total_Won_Money);
                       System.out.println("UnLuckiest"+total_loss_Money);
 
+                      int end=scan.nextInt();
+                      if(end==1)
+                      {
+                      System.out.println("Stop the game here");
+                      }
+                      else
+                      {
+                      gambleGame();
+                      System.out.println("Want to play game again");
+                      }
+
   }
 
 }
